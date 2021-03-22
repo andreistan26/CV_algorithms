@@ -8,7 +8,7 @@ np.set_printoptions(threshold=sys.maxsize) #used for uncapping the max stdout in
 need_noise_reduction = True
 
 def main():
-    picture = cv2.imread("../../../res/lenna.png", 0);
+    picture = cv2.imread("res/lenna.png", 0);
     if need_noise_reduction:
         picture = cv2.GaussianBlur(picture, (5, 5), 0)
     #hist
